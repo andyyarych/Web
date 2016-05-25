@@ -1,0 +1,35 @@
+<!DOCTYPE html >
+<html>
+    <meta charset="UTF-8"></meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css"></link>
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3-theme-blue.css"></link>
+    <body>
+        <header class="w3-container w3-card-4 w3-theme">
+            <h1>"Magic: The Gathering" Cards Shop</h1>
+        </header>
+        
+        <div class="w3-container" id="itemcontainer">
+        </div>
+        
+        <footer class="w3-container w3-theme">
+            <span id="totalprice">Total price: $</span> <button id="buybutton" class="w3-btn w3-theme-l3">Purchase</button>
+            <p class="input verify:error">Magic the Gathering and its properties are copyright of 
+            <a href="https://company.wizards.com/">Wizards of the Coast</a> </p>
+        </footer>
+        
+        <!-- The Modal Dialog-->
+        <div id="buydialog" class="w3-modal">
+            <div class="w3-modal-content">
+                <div class="w3-container">
+                    <span onclick="document.getElementById('buydialog').style.display='none'"
+                        class="w3-closebtn">&times;</span>
+                    <p>Thank you for purchase!</p>
+                    <p>Total price: $<span id="dialogprice"></span>.</p>
+                </div>
+            </div>
+        </div>
+        
+        <script src="shop3.js"></script>
+    </body>
+</html>
